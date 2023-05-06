@@ -13,10 +13,7 @@ bitflags = "1.2.1"
 libc = "0.2"
 v4l-sys = { path = "v4l-sys", version = "0.2.0", optional = true }
 v4l2-sys = { path = "v4l2-sys", version = "0.2.0", package="v4l2-sys-mit", optional = true }
-<<<<<<< HEAD
-=======
 v4l2-sys-vendored = { path = "v4l2-sys-vendored", version = "0.1.0", optional = true }
->>>>>>> c45949c (Add vendored build crate and feature)
 
 [dev-dependencies]
 glium = "0.27.0"
@@ -26,17 +23,11 @@ jpeg-decoder = "0.2.1"
 default = ["v4l2"]
 libv4l = ["v4l-sys"]
 v4l2 = ["v4l2-sys"]
-<<<<<<< HEAD
-=======
 vendored = ["v4l2-sys-vendored"]
->>>>>>> c45949c (Add vendored build crate and feature)
 
 [workspace]
 members = [
     "v4l-sys",
     "v4l2-sys",
-<<<<<<< HEAD
-=======
     "v4l2-sys-vendored"
->>>>>>> c45949c (Add vendored build crate and feature)
 ]
