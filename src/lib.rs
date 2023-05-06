@@ -70,9 +70,19 @@
 #[cfg(feature = "v4l-sys")]
 pub use v4l_sys;
 
+<<<<<<< HEAD
 #[cfg(feature = "v4l2-sys")]
 pub use v4l2_sys as v4l_sys;
 
+=======
+#[cfg(all(feature = "v4l2-sys", not(feature = "vendored")))]
+pub use v4l2_sys as v4l_sys;
+
+#[cfg(all(not(feature = "v4l2-sys"), feature = "vendored"))]
+pub use v4l2_sys_vendored as v4l_sys;
+
+
+>>>>>>> c45949c (Add vendored build crate and feature)
 pub mod v4l2;
 
 pub mod buffer;

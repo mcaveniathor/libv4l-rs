@@ -4,7 +4,11 @@ use std::{io, path::Path};
 
 use crate::v4l2::vidioc;
 
+<<<<<<< HEAD
 #[cfg(feature = "v4l-sys")]
+=======
+#[cfg(any(feature = "v4l-sys", feature="vendored"))]
+>>>>>>> c45949c (Add vendored build crate and feature)
 mod detail {
     use crate::v4l2::vidioc;
     use crate::v4l_sys::*;

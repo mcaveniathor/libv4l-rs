@@ -17,7 +17,11 @@ A minimalistic OpenGL/Vulkan viewer to display frames is planned for the future.
 See [CHANGELOG.md](https://github.com/raymanfx/libv4l-rs/blob/master/CHANGELOG.md)
 
 ## Dependencies
+<<<<<<< HEAD
 You have the choice between two dependencies (both provided by this crate internally):
+=======
+You have the choice between dependencies (both provided by this crate internally):
+>>>>>>> c45949c (Add vendored build crate and feature)
  * libv4l-sys
    > Link against the libv4l* stack including libv4l1, libv4l2, libv4lconvert.
    > This has the advantage of emulating common capture formats such as RGB3 in userspace through libv4lconvert and more.

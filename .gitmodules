@@ -1,0 +1,3 @@
+[submodule "v4l2-sys-vendored"]
+	path = v4l2-sys-vendored
+	url = https://github.com/mcaveniathor/v4l2-sys-vendored
